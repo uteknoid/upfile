@@ -23,7 +23,7 @@ fileInput.onchange = ({target})=>{
 // file upload function
 function uploadFile(name){
   let xhr = new XMLHttpRequest(); //creating new xhr object (AJAX)
-  xhr.open("POST", "home/upload"); //sending post request to the specified URL
+  xhr.open("POST", "unggah/upload"); //sending post request to the specified URL
   xhr.upload.addEventListener("progress", ({loaded, total}) =>{ //file uploading progress event
     let fileLoaded = Math.floor((loaded / total) * 100);  //getting percentage of loaded file size
     let fileTotal = Math.floor(total / 1000); //gettting total file size in KB from bytes
